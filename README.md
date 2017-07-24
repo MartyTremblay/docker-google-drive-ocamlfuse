@@ -7,7 +7,7 @@
 ````
 docker run -d \
 --name google-drive \
---user abc:abc \
+--user rancher:rancher \
 --security-opt apparmor:unconfined \
 --cap-add mknod \
 --cap-add sys_admin \
