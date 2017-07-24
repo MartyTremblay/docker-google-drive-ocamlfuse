@@ -11,8 +11,8 @@ RUN echo "deb http://ppa.launchpad.net/alessandro-strada/ppa/ubuntu xenial main"
  && apt-get clean all \
  && rm /var/log/apt/* /var/log/alternatives.log /var/log/bootstrap.log /var/log/dpkg.log
 
-RUN useradd -u 1001 -m abc
-RUN usermod -a -G root abc
+RUN useradd -u 1100 -m rancher
+RUN usermod -a -G root rancher
 
 COPY docker-entrypoint.sh /usr/local/bin/
 
